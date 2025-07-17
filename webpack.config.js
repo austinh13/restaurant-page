@@ -1,9 +1,8 @@
-// webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development", // or "production"
+  mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "main.js",
@@ -15,9 +14,16 @@ module.exports = {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
   devServer: {
     static: "./dist",
-    port: 8080,
     open: true,
   },
 };

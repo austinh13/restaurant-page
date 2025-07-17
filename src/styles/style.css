@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* body */
+body{
+    font-family: "Libertinus Mono", monospace;
+    margin: 0px;
+    background-color: bisque;
+}
+
+/* header */
+#content{
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.header{
+    width: 80vw;
+    height: 25vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(0, 0, 0,0.35);
+    border-radius: 0px 0px 3vw 3vw;
+}
+
+.header h1{
+    font-size: 3.3vw;
+    margin: 0.5vh 0 0 0;
+}
+
+@media (max-width: 600px){
+    #content{
+
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .header{
+        width: 85vw;
+        height: 20vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: rgb(0, 0, 0,0.35);
+        border-radius: 0px 0px 3vw 3vw;
+    }
+
+    .header h1{
+        font-size: 3.5vh;
+        margin: 0.5vh 0 0 0;
+    }
+}
