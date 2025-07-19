@@ -32,7 +32,7 @@ body{
 
 .header h1{
     font-size: 3.4vw;
-    margin: 0.5vh 0 0 0;
+    margin: 1.5vh 0 0 0;
 }
 
 .buttonHolder{
@@ -71,6 +71,8 @@ body{
     align-items: center;
     text-align: center;
     padding: 1.5vh 5vw 1.5vh 5vw;
+
+    border-radius: 5px;
 }
 
 .homeTitle{
@@ -78,25 +80,17 @@ body{
 }
 
 .paragraph{
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
 @media (max-width: 600px){
     #content{
-
-        display: flex;
-        flex-direction: column;
         width: 100vw;
         height: 100vh;
-        align-items: center;
     }
 
     .header{
         width: 85vw;
-        height: 20vh;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        height: 18vh;
 
         background-color: rgb(0, 0, 0,0.35);
         border-radius: 0px 0px 3vw 3vw;
@@ -104,6 +98,48 @@ body{
 
     .header h1{
         font-size: 3.5vh;
-        margin: 0.5vh 0 0 0;
+        margin: 2vh 0 0 0;
+    }
+
+    .buttonHolder{
+
+        gap:3vh;
+
+        padding-top: 0.5vh;
+        
+    }
+
+    .tabButtons{
+        width: 15vw;
+        height: 10vh;
+
+        font-family: "Libertinus Mono", monospace;
+        font-size: 2.8vh;
+        background-color: rgba(0, 0, 0, 0);
+        border-width: 0;
+        transition: font-size 0.5s ease, transform 0.5s ease;
+    }
+
+    .tabButtons.active{
+        font-size: 3.3vh;
+    }
+
+    /* home page */
+
+    .homePage{
+        width: 65vw;
+        height: 60vh;
+
+        padding: 1.5vh 5vw 1.5vh 5vw;
+
+        border-radius: 5px;
+    }
+
+    .homeTitle{
+        font-size: 3vh;
+    }
+
+    .paragraph{
+        font-size: 1.7vh;
     }
 }
