@@ -58,6 +58,15 @@ body{
     font-size: 3.3vw;
 }
 
+/* home page */
+
+.homePage{
+    display: flex;
+    flex-direction: column;
+}
+.homeTitle{
+
+}
 @media (max-width: 600px){
     #content{
 
