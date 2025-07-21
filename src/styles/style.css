@@ -31,7 +31,7 @@ body{
 }
 
 .header h1{
-    font-size: 3.4vw;
+    font-size: 3.8vw;
     margin: 1.5vh 0 0 0;
 }
 
@@ -41,7 +41,7 @@ body{
     flex-direction: row;
     gap:2vw;
 
-    padding-top: 2vh;
+    padding-top: 1.5vh;
     
 }
 
@@ -97,7 +97,7 @@ body{
     }
 
     .header h1{
-        font-size: 3.5vh;
+        font-size: 4vh;
         margin: 2vh 0 0 0;
     }
 
@@ -105,7 +105,7 @@ body{
 
         gap:3vh;
 
-        padding-top: 0.5vh;
+        padding-top: 0.4vh;
         
     }
 
