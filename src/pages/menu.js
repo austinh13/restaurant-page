@@ -1,5 +1,6 @@
 import imageOne from "../images/burgerOne.jpg";
-import imageTwo from "../images/ChompZilla.jpg"
+import imageTwo from "../images/ChompZilla.jpg";
+import imageThree from "../images/MooMoo.jpg";
 
 export default function createMenu(){
     const content = document.getElementById("content");
@@ -14,39 +15,38 @@ export default function createMenu(){
     const gridDiv = document.createElement("div");
     gridDiv.classList.add("gridDiv");
 
-    createTiles(gridDiv);
+    createGrid(gridDiv);
     menuPage.appendChild(header);
     menuPage.appendChild(gridDiv);
     content.appendChild(menuPage);
 }
 
-function createTiles(grid){
+function createGrid(grid){
     
-    const itemOne = document.createElement("div");
-    itemOne.classList.add("tile");
+    const itemOne = createTile("Chompies Regular",imageOne);
 
-    const itemOneName = document.createElement("h1");
-    itemOneName.innerHTML = "Chompies Regular";
+    const itemTwo = createTile("The Chompzilla",imageTwo);
 
-    const picOne = document.createElement("img");
-    picOne.src = imageOne;
-
-    itemOne.appendChild(itemOneName);
-    itemOne.appendChild(picOne);
-
-    const itemTwo = document.createElement("div");
-    itemTwo.classList.add("tile");
-
-    const itemTwoName = document.createElement("h1");
-    itemTwoName.innerHTML = "ChompZilla";
-
-    const picTwo = document.createElement("img");
-    picTwo.src = imageTwo;
-
-    itemTwo.appendChild(itemTwoName);
-    itemTwo.appendChild(picTwo);
+    const itemThree = createTile("MooMooPow",imageThree);
 
     grid.appendChild(itemOne);
     grid.appendChild(itemTwo);
+    grid.appendChild(itemThree);
 
+}
+
+function createTile(name,imgSrc){
+    let item = document.createElement("div");
+    item.classList.add("tile");
+
+    const itemName = document.createElement("h1");
+    itemName.innerHTML = name;
+
+    const pic = document.createElement("img");
+    pic.src = imgSrc;
+
+    item.appendChild(itemName);
+    item.appendChild(pic);
+
+    return item;
 }
