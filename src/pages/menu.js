@@ -1,6 +1,9 @@
 import imageOne from "../images/burgerOne.jpg";
 import imageTwo from "../images/ChompZilla.jpg";
 import imageThree from "../images/MooMoo.jpg";
+import imageFour from "../images/PicklePanic.jpg";
+import imageFive from "../images/Burgernaut.jpg";
+import imageSix from "../images/Sasquatch.jpg";
 
 export default function createMenu(){
     const content = document.getElementById("content");
@@ -29,9 +32,18 @@ function createGrid(grid){
 
     const itemThree = createTile("MooMooPow",imageThree);
 
+    const itemFour = createTile("The Pickle Panic",imageFour);
+
+    const itemFive = createTile("Burgernaut",imageFive);
+
+    const itemSix = createTile("Sizzlin' Sasquatch ",imageSix);
+
     grid.appendChild(itemOne);
     grid.appendChild(itemTwo);
     grid.appendChild(itemThree);
+    grid.appendChild(itemFour);
+    grid.appendChild(itemFive);
+    grid.appendChild(itemSix);
 
 }
 
