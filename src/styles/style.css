@@ -147,6 +147,18 @@ body{
     border-radius: 5px;
 }
 
+.infoDiv h1{
+    
+}
+
+.infoDiv h2{
+
+}
+
+.infoDiv p{
+    margin: 0;
+}
+
 @media (max-width: 600px){
     #content{
         width: 100vw;
