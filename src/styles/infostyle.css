@@ -67,10 +67,9 @@
 
 @media (max-width: 600px){
     .infoDiv{
-        width: 70vw;
+        width: 72vw;
         height: 135vh;
 
-        margin-top: 2vh;
     }
 
     .infoDiv h1{

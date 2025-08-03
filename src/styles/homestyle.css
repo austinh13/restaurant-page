@@ -20,3 +20,25 @@
 .paragraph{
     font-size: 1.2vw;
 }
+
+@media (max-width: 600px){
+
+    /* home page */
+
+    .homePage{
+        width: 72vw;
+        height: 65vh;
+
+        padding: 1.5vh 5vw 1.5vh 5vw;
+
+        border-radius: 5px;
+    }
+
+    .homeTitle{
+        font-size: 3vh;
+    }
+
+    .paragraph{
+        font-size: 1.8vh;
+    }
+}
