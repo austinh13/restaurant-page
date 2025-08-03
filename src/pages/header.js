@@ -16,14 +16,17 @@ export default function createHeader() {
 
   // creation of 3 seperate buttons
   const homeButton = document.createElement("button");
+  homeButton.id = "homeButton";
   homeButton.innerHTML = "Home";
   homeButton.classList.add("tabButtons");
 
   const menuButton = document.createElement("button");
+  menuButton.id = "menuButton";
   menuButton.innerHTML = "Menu";
   menuButton.classList.add("tabButtons");
 
   const infoButton = document.createElement("button");
+  infoButton.id = "infoButton";
   infoButton.innerHTML = "Info";
   infoButton.classList.add("tabButtons");
 
