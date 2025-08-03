@@ -138,25 +138,50 @@ body{
     width: 60vw;
     height: 55vh;
     background-color: rgba(210, 156, 55, 0.251);
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap:2vh;
     padding: 1.5vh 5vw 1.5vh 5vw;
 
     border-radius: 5px;
 }
 
 .infoDiv h1{
-    
+    font-size: 2.5vw;
+    margin: 1vh 0 0 0;
+}
+
+.informationGrid{
+    display: grid;
+    grid-template-columns: repeat(3,22vw);
+}
+
+.infoTile{
+    display: flex;
+    flex-direction: column;
+
+    width: 16vw;
+    height: 41vh;
+    padding: 1vh 1vw 1vh 1vw;
+    gap:3vh;
+    background-color: rgb(210, 156, 55);
 }
 
 .infoDiv h2{
-
+    font-size: 2.3vw;
+    margin: 0;
 }
 
 .infoDiv p{
+    font-size: 1.5vw;
     margin: 0;
+}
+
+#hourTile h2{
+    font-size: 2vw;
 }
 
 @media (max-width: 600px){
