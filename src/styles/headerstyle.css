@@ -1,0 +1,95 @@
+/* header */
+#content{
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    gap: 5vh;
+
+}
+
+.header{
+    width: 80vw;
+    height: 25vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(0, 0, 0,0.35);
+    border-radius: 0px 0px 3vw 3vw;
+}
+
+.header h1{
+    font-size: 3.8vw;
+    margin: 1.5vh 0 0 0;
+}
+
+.buttonHolder{
+
+    display: flex;
+    flex-direction: row;
+    gap:2vw;
+
+    padding-top: 1.5vh;
+    
+}
+
+.tabButtons{
+    width: 15vw;
+    height: 10vh;
+
+    font-family: "Libertinus Mono", monospace;
+    font-size: 2.8vw;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    transition: font-size 0.5s ease, transform 0.5s ease;
+}
+
+.tabButtons.active{
+    font-size: 3.3vw;
+}
+
+@media (max-width: 600px){
+    
+    #content{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header{
+        width: 90vw;
+        height: 25vh;
+
+        background-color: rgb(0, 0, 0,0.35);
+        border-radius: 0px 0px 3vw 3vw;
+    }
+
+    .header h1{
+        font-size: 6vh;
+        margin: 2vh 0 0 0;
+    }
+
+    .buttonHolder{
+
+        gap:3vh;
+        padding-top: 0.4vh;
+        
+    }
+
+    .tabButtons{
+        width: 23vw;
+        height: 15vh;
+
+        font-family: "Libertinus Mono", monospace;
+        font-size: 3.5vh;
+        background-color: rgba(0, 0, 0, 0);
+        border-width: 0;
+        transition: font-size 0.5s ease, transform 0.5s ease;
+    }
+
+
+
+}
