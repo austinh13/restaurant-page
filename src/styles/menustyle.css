@@ -7,6 +7,7 @@
         padding: 1vh 2vw 1vh 2vw;
         overflow-y: auto;
         text-align: center;
+        align-items: center;
         width: 60vw;
         height: 60vh;
 }
@@ -21,6 +22,7 @@
     display: grid;
     grid-template-columns: repeat(3,21vw);
     grid-template-rows: repeat(2,38vh);
+    justify-items: center;
 }
 
 .tile{
@@ -50,18 +52,32 @@
 @media (max-width: 600px){
         /* menu */
     .menuPage{
-
+         width: 72vw;
+         align-items: center;
     }
 
     .menuHeader{
-
+        font-size: 5vh;
     }
 
     .gridDiv{
-
+        grid-template-columns: repeat(1,35vw);
+        grid-template-rows: repeat(5,34vh);
     }
 
     .tile{
-        
+        width: 65vw;
+        height: 30vh;
     }
+
+    .tile h1{
+    font-size: 3vh;
+    }
+
+    .tile img{
+        width: 35vw;
+        height: auto;
+        opacity: 0.95;
+    }
+
 }
